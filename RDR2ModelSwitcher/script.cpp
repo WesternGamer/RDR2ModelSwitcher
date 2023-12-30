@@ -90,6 +90,6 @@ void ScriptMain()
 
 		UpdatePedOutfit(PLAYER::PLAYER_PED_ID());
 
-		WAIT(0);
+		WAIT(100);
 	}
 }
