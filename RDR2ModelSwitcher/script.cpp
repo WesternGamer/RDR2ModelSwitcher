@@ -88,8 +88,10 @@ void ScriptMain()
 
 		MAP::SET_BLIP_NAME_TO_PLAYER_NAME(MAP::GET_MAIN_PLAYER_BLIP_ID(), PLAYER::PLAYER_ID());
 
+		UpdatePedOutfit(PLAYER::PLAYER_PED_ID(), -1);
+		WAIT(10);
 		UpdatePedOutfit(PLAYER::PLAYER_PED_ID());
 
-		WAIT(100);
+		WAIT(200);
 	}
 }

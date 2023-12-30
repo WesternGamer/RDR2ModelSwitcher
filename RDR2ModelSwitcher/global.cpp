@@ -201,7 +201,7 @@ void UpdatePedOutfit(Ped ped, int outfitVariation)
 {
 	if (ENTITY::DOES_ENTITY_EXIST(ped))
 	{
-		PED::_EQUIP_META_PED_OUTFIT_PRESET(ped, outfitVariation, true);
+		PED::_EQUIP_META_PED_OUTFIT_PRESET(ped, outfitVariation, false);
 		PED::_UPDATE_PED_VARIATION(ped, true, true, true, true, true);
 	}
 }
